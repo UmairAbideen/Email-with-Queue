@@ -18,33 +18,28 @@ Great for:
 - ✅ Optional Job-based approach (no need for Mailable class)
 
 🧰 Tech Stack
-
 Tool	Description
-Laravel	v10.x — PHP framework
-Mail	Laravel Mail with queue() method
-Jobs	php artisan make:job
-Queue	Database driver
-Worker	php artisan queue:work
-Blade	For email and form views
-SMTP	Gmail (used for sending email)
+- Laravel	v10.x — PHP framework
+- Blade	For email and form views
+- SMTP	Gmail (used for sending email)
+
 💡 Concept
 This project uses Laravel Queues to handle email sending via SendEmailJob, which internally uses Mail::send().
 
 ✅ Two common email strategies in Laravel:
 
 Method	Use Case
-Mail::send()	Quick, inline email setup
-Mailable Class	Reusable, complex email setup
-This project shows how to skip Mailable class and use Job + Mail::send directly — cleaner when sending simple or dynamic emails via background jobs.
+- Mail::send()	Quick, inline email setup
+- Mailable Class	Reusable, complex email setup
+- This project shows how to skip Mailable class and use Job + Mail::send directly — cleaner when sending simple or dynamic emails via background jobs.
 
 ⚙️ Important Commands
-bash
-Copy
-Edit
+```
 # 1. Setup Queue
 php artisan queue:table
 php artisan migrate
 
 # 2. Start worker
 php artisan queue:work
+
 🛠️ Keep queue:work running in a terminal window while testing queued emails.
