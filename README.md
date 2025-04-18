@@ -6,19 +6,16 @@ Sending emails directly in the request cycle can slow down your app — especial
 
 Great for:
 
-Contact forms
-
-Newsletters
-
-Invoicing systems
-
-Any feature where emails shouldn't delay user experience
+- Contact forms
+- Newsletters
+- Invoicing systems
+- Any feature where emails shouldn't delay user experience
 
 🚀 Features
-✅ Send basic email with subject & message
-✅ Send email with PDF attachment (using DomPDF)
-✅ Use Laravel Queues to send emails in the background
-✅ Optional Job-based approach (no need for Mailable class)
+- ✅ Send basic email with subject & message
+- ✅ Send email with PDF attachment (using DomPDF)
+- ✅ Use Laravel Queues to send emails in the background
+- ✅ Optional Job-based approach (no need for Mailable class)
 
 🧰 Tech Stack
 
